@@ -1,0 +1,15 @@
+movies_graph:
+    path: /movies/graph
+    defaults: { _controller: AppBundle:Movie:graph }
+
+movies_show:
+    path: /movies/{title}
+    defaults: { _controller: AppBundle:Movie:show }
+
+movies_search:
+    path: /movies
+    defaults: { _controller: AppBundle:Movie:search }
+
+homepage:
+    path: /
+    defaults: { _controller: AppBundle:Default:index }

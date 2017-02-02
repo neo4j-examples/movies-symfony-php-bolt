@@ -1,0 +1,12 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    # A secret key that's used to generate certain security-related tokens
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    neo4j_scheme: bolt
+    neo4j_host: localhost
+    neo4j_port: 7687
+    neo4j_user: neo4j
+    neo4j_password: neo4j

@@ -1,0 +1,43 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+parameters:
+    locale: en
+
+# Neo4j configuration
+neo4j:
+    connections:
+        default:
+            schema: "%neo4j_scheme%"
+            host: "%neo4j_host%"
+            port: "%neo4j_port%"
+            username: "%neo4j_user%"
+            password: "%neo4j_password%"
+
+framework:
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
+    http_method_override: true
+    assets: ~
+    php_errors:
+        log: true
+
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
