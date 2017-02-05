@@ -9,6 +9,8 @@ use Symfony\Component\HttpFoundation\Request;
 class MovieController extends Controller
 {
     /**
+     * Search for any movie.
+     *
      * @param Request $request
      *
      * @return JsonResponse
@@ -35,6 +37,8 @@ class MovieController extends Controller
     }
 
     /**
+     * Show title and cast about a movie.
+     *
      * @param string $title
      *
      * @return JsonResponse
@@ -68,6 +72,8 @@ class MovieController extends Controller
     }
 
     /**
+     * Display the graph in the background.
+     *
      * @param Request $request
      *
      * @return JsonResponse
