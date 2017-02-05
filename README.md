@@ -14,6 +14,19 @@ From the project root directory, simply run
 $ composer install
 ```
 
+## Run
+
+When the data fixtures and depedencies are installed you may run the application. Simply start PHP's web server by: 
+```bash
+$ php bin/console server:run
+```
+
+Now navigate to http://127.0.0.1:8000. You can try search for movies like "Matrix", "Top Gun", "Apollo 13" and many more.
+
+## The code
+
+The interesting code is placed in `src/AppBundle/Controller/MovieController`. 
+
 ## License
 This code is released under the MIT license. See the attached `LICENSE` file for further informations.
 
