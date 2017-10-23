@@ -10,7 +10,7 @@ parameters:
 neo4j:
     connections:
         default:
-            schema: "%neo4j_scheme%"
+            scheme: "%neo4j_scheme%"
             host: "%neo4j_host%"
             port: "%neo4j_port%"
             username: "%neo4j_user%"
